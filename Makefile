@@ -1,6 +1,6 @@
 test_smoke:
-	@curl http://127.0.0.1:4567/hello;
-	curl http://127.0.0.1:4567/greetings?name=W;
+	@printf "1:" && curl http://127.0.0.1:4567/hello;
+	@printf "\n2:" && curl http://127.0.0.1:4567/greetings?name=W;
 
 test:
 	gradle test
