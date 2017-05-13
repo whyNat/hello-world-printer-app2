@@ -5,6 +5,12 @@ test_smoke:
 test:
 	gradle test
 
+run:
+	gradle run
+
+package:
+	gradle package
+
 lint:
 	gradle checkstyleMain && \
 	gradle checkstyleTest && \
