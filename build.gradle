@@ -3,6 +3,7 @@ apply plugin: 'pmd'
 apply plugin: 'checkstyle'
 apply plugin: 'application'
 apply plugin: 'eclipse'
+apply plugin: 'findbugs'
 
 sourceSets {
   main {

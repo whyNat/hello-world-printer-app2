@@ -14,4 +14,5 @@ package:
 lint:
 	gradle checkstyleMain && \
 	gradle checkstyleTest && \
-	gradle pmdMain
+	gradle pmdMain && \
+	gradle findbugsMain
