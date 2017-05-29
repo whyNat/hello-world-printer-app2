@@ -10,6 +10,7 @@ test_smoke:
 
 test:
 	gradle test
+	PYTHONPATH=. py.test --verbose -s
 
 run:
 	gradle run
