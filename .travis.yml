@@ -2,7 +2,7 @@ language: java
 services:
   - docker
 java:
-  - "1.0.8"
+  - "1.8.0"
 install:
   - make deps
 script:
