@@ -1,0 +1,17 @@
+language: java
+services:
+  - docker
+java:
+  - "1.0.8"
+install:
+  - make deps
+script:
+  - make test
+  - make test_xunit
+after_success:
+  - make docker_build
+  - PASSWORD=$DOCKER_PASSWORD make docker_push
+deploy:
+  provider: heroku
+  app: lokalnie
+  api_key: ${HEROKU_API_KEY} 
